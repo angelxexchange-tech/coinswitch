@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.Coinswitch.www.twa",
+      "sha256_cert_fingerprints": [
+        "85:8B:60:4B:E3:69:89:BE:EF:36:D1:C2:6F:32:35:A0:AD:C9:07:59:4E:DD:8F:FF:D4:E6:D1:0B:BE:CD:33:8D"
+      ]
+    }
+  }
+]
