@@ -370,7 +370,7 @@ export default function AdminLoginPage() {
           {/* Logo */}
           <div className="login-logo">
             <div className="login-logo-icon">🛡️</div>
-            <div className="login-logo-title">Coinswitch </div>
+            <div className="login-logo-title">CoinSwitch </div>
             <div className="login-logo-sub">Admin Control Panel</div>
           </div>
 

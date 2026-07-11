@@ -57,7 +57,7 @@ export default function CompleteProfile() {
             </div>
             <section className="section-1">
               <h3 className="title">
-                <b>Welcome to Coinswitch </b>
+                <b>Welcome to CoinSwitch </b>
               </h3>
               <h4 style={{ fontWeight: 'normal', fontSize: '20px', paddingBottom: '10px', color: '#696969' }}>
                 Exchange more, earn more, make your life better.

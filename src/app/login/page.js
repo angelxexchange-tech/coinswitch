@@ -43,7 +43,7 @@ export default function LoginPage() {
           <div className="page-wrapperss page-wrapper-ex page-wrapper-login">
             <section className="section-1">
               <div className="image" style={{ textAlign: 'center' }}>
-                
+
 
 
                 <video src="/image/login.mp4" style={{ width: "100%" }} autoPlay loop muted playsInline />
@@ -51,10 +51,10 @@ export default function LoginPage() {
             </section>
             <section className="section-3">
               <p className="title" style={{ textAlign: "center", paddingTop: 0 }}>
-                <b>Welcome to Coinswitch </b>
+                <b>Welcome to CoinSwitch </b>
               </p>
               <p style={{ textAlign: "center" }}>
-                Coinswitch is the most trustable and exchange partner, the more you
+                CoinSwitch is the most trustable and exchange partner, the more you
                 exchange, the more you earn!
               </p>
               <div className="login-bx">

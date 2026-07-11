@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Coinswitch ",
-  description: "Coinswitch is the most trustable exchange partner. Exchange more, earn more!",
+  title: "CoinSwitch ",
+  description: "CoinSwitch is the most trustable exchange partner. Exchange more, earn more!",
   manifest: "/manifest.json",
   icons: {
     icon: "/image/logo-icon.png",
