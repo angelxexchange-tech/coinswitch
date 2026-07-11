@@ -276,7 +276,12 @@ export default function Index() {
               <div className="coimmico"><img src="/image/comm.png" alt="" style={{ width: '90px' }} /></div>
             </div>
             <div className="righttwo">
+              
               <div className="bttright">
+                <div>
+                <h2 style={{ fontSize: '14px', fontWeight: 'bold' }}>Exchange on <br/> AngelX Super</h2>
+                <p style={{ fontSize: '11px' }}>Change your life <br/> with your actions</p>
+              </div>
                 <img src="/image/ex__t.png" alt="" />
               </div>
               <div className="btright">

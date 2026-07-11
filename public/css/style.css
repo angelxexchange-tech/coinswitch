@@ -72,7 +72,7 @@ p {
 }
 .page-wrappers {
     position: relative;
-    max-width: 375px;
+    max-width: 420px;
     margin: auto;
     background: #fff;
 	overflow: auto;
@@ -635,7 +635,6 @@ section.section-4 .dflex-out .rw {
 }
 
 .page-wrapperss.page-wrapper-login {
-    padding: 0 10px;
     line-height: 150%;
 }
 
