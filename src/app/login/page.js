@@ -49,12 +49,12 @@ export default function LoginPage() {
                 <video src="/image/login.mp4" style={{ width: "100%" }} autoPlay loop muted playsInline />
               </div>
             </section>
-            <section className="section-3">
+            <section className="section-3 ">
               <p className="title" style={{ textAlign: "center", paddingTop: 0 }}>
                 <b>Welcome to CoinSwitch </b>
               </p>
               <p style={{ textAlign: "center" }}>
-                CoinSwitch is the most trustable and exchange partner, the more you
+                CoinSwitch is the most trustable and exchange partner, <br/> the more you
                 exchange, the more you earn!
               </p>
               <div className="login-bx">
