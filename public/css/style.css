@@ -72,7 +72,7 @@ p {
 }
 .page-wrappers {
     position: relative;
-    max-width: 420px;
+    max-width: 375px;
     margin: auto;
     background: #fff;
 	overflow: auto;
