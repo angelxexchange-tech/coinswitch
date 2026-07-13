@@ -170,7 +170,7 @@ export default function AdminDashboard() {
           <div className={styles.brandIcon}>
             <i className="fas fa-bolt" />
           </div>
-          <div className={styles.brandText}>Coinswitch </div>
+          <div className={styles.brandText}>CoinSwitch </div>
         </div>
 
         <div className={styles.topBarRight}>
@@ -236,7 +236,7 @@ export default function AdminDashboard() {
             <div className={styles.brandIcon} style={{ width: "28px", height: "28px", fontSize: "12px" }}>
               <i className="fas fa-bolt" />
             </div>
-            <div className={styles.brandText}>Coinswitch </div>
+            <div className={styles.brandText}>CoinSwitch </div>
           </div>
           <button className={styles.closeSidebarBtn} onClick={() => setIsMobileMenuOpen(false)}>
             <i className="fas fa-times" />

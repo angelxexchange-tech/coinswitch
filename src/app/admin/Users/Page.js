@@ -63,7 +63,7 @@ export default function AdminUsersPage() {
         <div>
           <h1 className={styles.pageTitle}>User Management</h1>
           <p className={styles.pageSubtitle}>
-            {total} registered user{total !== 1 ? 's' : ''} on Coinswitch
+            {total} registered user{total !== 1 ? 's' : ''} on CoinSwitch
           </p>
         </div>
         <div className={styles.searchContainer}>

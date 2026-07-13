@@ -17,7 +17,7 @@ export const sendEmail = async (to, otp) => {
       <p>This code will expire in 5 minutes.</p>
       <p>If you did not request this code, please ignore this email.</p>
       <footer style="margin-top: 20px; font-size: 12px; color: #aaa;">
-        © 2025 Coinswitch. All rights reserved.
+        © 2025 CoinSwitch. All rights reserved.
       </footer>
     </div>
   `;
@@ -26,7 +26,7 @@ export const sendEmail = async (to, otp) => {
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to,
-      subject: 'Your Coinswitch Verification Code',
+      subject: 'Your CoinSwitch Verification Code',
       html,
     });
   } catch (error) {
