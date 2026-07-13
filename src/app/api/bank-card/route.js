@@ -1,23 +1,6 @@
 import dbConnect from '@/lib/db';
-import User from '@/lib/models/User';
 import BankCard from '@/lib/models/BankCard';
-import jwt from 'jsonwebtoken';
-
-// 1️⃣ Helper to get current user from JWT
-async function getCurrentUser(req) {
-  const authHeader = req.headers.get('authorization');
-  if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
-
-  const token = authHeader.split(' ')[1];
-  try {
-    const payload = jwt.verify(token, process.env.JWT_SECRET);
-    await dbConnect();
-    const user = await User.findById(payload.id);
-    return user || null;
-  } catch (err) {
-    return null;
-  }
-}
+import { getCurrentUser } from '@/lib/auth';
 
 // 2️⃣ GET: fetch all bank cards for the current user
 export async function GET(req) {

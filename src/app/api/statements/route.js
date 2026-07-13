@@ -1,22 +1,7 @@
 import { NextResponse } from 'next/server';
 import dbConnect from '@/lib/db';
-import User from '@/lib/models/User';
 import Transaction from '@/lib/models/Transaction';
-import jwt from 'jsonwebtoken';
-
-async function getCurrentUser(req) {
-  const authHeader = req.headers.get('authorization');
-  if (!authHeader || !authHeader.startsWith('Bearer ')) return null;
-
-  const token = authHeader.split(' ')[1];
-  try {
-    const payload = jwt.verify(token, process.env.JWT_SECRET);
-    await dbConnect();
-    return await User.findById(payload.id).lean();
-  } catch (err) {
-    return null;
-  }
-}
+import { getCurrentUser } from '@/lib/auth';
 
 export async function GET(req) {
   try {

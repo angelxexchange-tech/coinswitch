@@ -1,7 +1,7 @@
 import dbConnect from "@/lib/db";
 import Transaction from "@/lib/models/Transaction";
 import { NextResponse } from "next/server";
-import jwt from "jsonwebtoken";
+import { verifyToken } from "@/lib/auth";
 
 function getUserIdFromToken(req) {
   try {
@@ -9,8 +9,8 @@ function getUserIdFromToken(req) {
     const token = authHeader.split(" ")[1]; // "Bearer <token>"
     if (!token) return null;
 
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    return decoded.id; // assuming JWT payload contains { id: userId }
+    const decoded = verifyToken(token);
+    return decoded?.id || null; // returns decoded.id or null
   } catch (err) {
     console.error("Invalid token:", err);
     return null;
