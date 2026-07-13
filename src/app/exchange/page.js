@@ -179,9 +179,9 @@ export default function Exchange() {
         <div className="page-wrappers" style={{ background: '#f6f7fa' }}>
           <header className="header" style={{ padding: '9px 11px 5px 11px' }}>
             <div className="left">
-              <div className="logo-icon">
+              <div className="">
                 <img
-                  src="/image/coinswitch.svg"
+                  src="/images/coinswitch_black.svg"
                   alt="logo"
                   width="100"
                   height="40"
@@ -214,7 +214,7 @@ export default function Exchange() {
             <div className="mainHeadExchange">
               <p className="">Platform Rate</p>
               <h3>1 USDT = INR {rate}</h3>
-              <div className="logoImg"><img src="/image/grn_logo1.png" /></div>
+              <div className="logoImg"><img src="/image/coinswitch.svg" /></div>
             </div>
 
             <div style={{ padding: '10px 15px 14px 15px' }}>
