@@ -177,14 +177,14 @@ export default function Exchange() {
     <div>
       <main>
         <div className="page-wrappers" style={{ background: '#f6f7fa' }}>
-          <header className="header" style={{ padding: '9px 11px 5px 11px' }}>
+          <header className="header">
             <div className="left">
               <div className="">
                 <img
                   src="/images/coinswitch_black.svg"
                   alt="logo"
                   width="100"
-                  height="40"
+                  height="36"
                 />
               </div>
             </div>

@@ -86,17 +86,17 @@ export default function Index() {
 
 
         {showAppLink && (
-          <div className="applinkMainDiv" style={{ backgroundColor: '#000000' }}>
-            <div className="applinkdownload" style={{ borderBottom: '1px solid #333' }}>
+          <div className="applinkMainDiv" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd' }}>
+            <div className="applinkdownload" style={{ borderBottom: '1px solid #eee' }}>
               <div className="appimgtext">
 
                 <div className="textlink">
                   <img
-                    src="/image/coinswitch.svg"
+                    src="/images/coinswitch_black.svg"
                     alt="logo"
                     style={{ width: '90px', height: 'auto', marginBottom: '5px' }}
                   />
-                  <p style={{ color: '#ffffff' }}>India’s #1 Trusted USDT Exchange Platform.</p>
+                  <p style={{ color: '#000000' }}>India’s #1 Trusted USDT Exchange Platform.</p>
                 </div>
               </div>
 
@@ -104,6 +104,7 @@ export default function Index() {
                 href="Coinswitch.apk"
                 className="downloadbutton"
                 download
+                style={{ color: '#000000', borderColor: '#000000' }}
               >
                 Download
               </Link>
@@ -112,17 +113,17 @@ export default function Index() {
             <button
               className="closeAppLink"
               onClick={() => setShowAppLink(false)}
-              style={{ color: '#ffffff' }}
+              style={{ color: '#000000' }}
             >
               X
             </button>
           </div>
         )}
 
-        <header className="header" style={{ position: 'relative', background: "#000000" }}>
+        <header className="header" style={{ position: 'relative', background: '#ffffff', borderBottom: '1px solid #eee' }}>
           <div className="left">
             <img
-              src="/image/coinswitch.svg"
+              src="/images/coinswitch_black.svg"
               alt="logo"
               width="100"
               height="40"
@@ -143,7 +144,7 @@ export default function Index() {
                 alt="earphone"
                 width="24"
                 height="24"
-                style={{ filter: 'brightness(0) invert(1)' }}
+                style={{ filter: 'none' }}
               /></Link>
           </div>
         </header>
