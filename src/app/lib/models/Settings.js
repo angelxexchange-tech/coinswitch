@@ -14,6 +14,13 @@ const SettingsSchema = new mongoose.Schema({
   referralLevel4: { type: Number, default: 0.01 },
   referralLevel5: { type: Number, default: 0.01 },
   moderatorAmountLimit: { type: Number, default: 500 },
+  // Exchange rates shown in the UI (admin configurable)
+  wazirxAvg: { type: Number, default: 90.69 },
+  wazirxMin: { type: Number, default: 90.69 },
+  wazirxMax: { type: Number, default: 90.76 },
+  binanceAvg: { type: Number, default: 94.34 },
+  binanceMin: { type: Number, default: 94.99 },
+  binanceMax: { type: Number, default: 96.2 },
 }, { timestamps: true });
 
 export default mongoose.models.Settings || mongoose.model('Settings', SettingsSchema);

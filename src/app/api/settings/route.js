@@ -9,7 +9,13 @@ export async function GET() {
     const settings = await Settings.findOne() || {
       rate: 102,
       withdrawMin: 50,
-      depositMin: 100
+      depositMin: 100,
+      wazirxAvg: 90.69,
+      wazirxMin: 90.69,
+      wazirxMax: 90.76,
+      binanceAvg: 94.34,
+      binanceMin: 94.99,
+      binanceMax: 96.2
     };
 
     return NextResponse.json({ settings });

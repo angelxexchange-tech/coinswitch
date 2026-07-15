@@ -44,6 +44,12 @@ export async function GET(req) {
       referralLevel4: 0.01,
       referralLevel5: 0.01,
       moderatorAmountLimit: 500,
+      wazirxAvg: 90.69,
+      wazirxMin: 90.69,
+      wazirxMax: 90.76,
+      binanceAvg: 94.34,
+      binanceMin: 94.99,
+      binanceMax: 96.2,
     };
 
     return NextResponse.json({ settings });
@@ -70,7 +76,9 @@ export async function POST(req) {
       trc20QrUrl, erc20QrUrl,
       referralLevel1, referralLevel2, referralLevel3,
       referralLevel4, referralLevel5,
-      moderatorAmountLimit
+      moderatorAmountLimit,
+      wazirxAvg, wazirxMin, wazirxMax,
+      binanceAvg, binanceMin, binanceMax
     } = body;
 
     console.log('Received POST payload:', body);
@@ -107,6 +115,12 @@ export async function POST(req) {
       referralLevel4: parseFloat(referralLevel4) || 0,
       referralLevel5: parseFloat(referralLevel5) || 0,
       moderatorAmountLimit: parseFloat(moderatorAmountLimit) || 500,
+      wazirxAvg: parseFloat(wazirxAvg) || 0,
+      wazirxMin: parseFloat(wazirxMin) || 0,
+      wazirxMax: parseFloat(wazirxMax) || 0,
+      binanceAvg: parseFloat(binanceAvg) || 0,
+      binanceMin: parseFloat(binanceMin) || 0,
+      binanceMax: parseFloat(binanceMax) || 0,
     };
 
     console.log('Sending to Mongoose:', updateData);

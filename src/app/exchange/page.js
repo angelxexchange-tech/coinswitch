@@ -12,6 +12,12 @@ export default function Exchange() {
 
   const [rate, setRate] = useState(107);
   const [withdrawMin, setWithdrawMin] = useState(50);
+  const [wazirxAvg, setWazirxAvg] = useState(90.69);
+  const [wazirxMin, setWazirxMin] = useState(90.69);
+  const [wazirxMax, setWazirxMax] = useState(90.76);
+  const [binanceAvg, setBinanceAvg] = useState(94.34);
+  const [binanceMin, setBinanceMin] = useState(94.99);
+  const [binanceMax, setBinanceMax] = useState(96.2);
   const [usdtAmount, setUsdtAmount] = useState("");
   const [inrAmount, setInrAmount] = useState("");
   const [banks, setBanks] = useState([]);
@@ -29,6 +35,12 @@ export default function Exchange() {
           if (data.settings) {
             if (data.settings.rate) setRate(data.settings.rate);
             if (data.settings.withdrawMin) setWithdrawMin(data.settings.withdrawMin);
+            if (data.settings.wazirxAvg !== undefined) setWazirxAvg(data.settings.wazirxAvg);
+            if (data.settings.wazirxMin !== undefined) setWazirxMin(data.settings.wazirxMin);
+            if (data.settings.wazirxMax !== undefined) setWazirxMax(data.settings.wazirxMax);
+            if (data.settings.binanceAvg !== undefined) setBinanceAvg(data.settings.binanceAvg);
+            if (data.settings.binanceMin !== undefined) setBinanceMin(data.settings.binanceMin);
+            if (data.settings.binanceMax !== undefined) setBinanceMax(data.settings.binanceMax);
           }
         }
       } catch (err) {
@@ -379,15 +391,15 @@ export default function Exchange() {
                       </Link>
                     </div>
                     <div className="text">
-                      Avg <span className="b">90.69</span>{" "}
+                      Avg <span className="b">{wazirxAvg}</span>{" "}
                       <span className="rs">RS</span>
                     </div>
-                    <div className="small">1USDT = ₹90.69</div>
+                    <div className="small">1USDT = ₹{wazirxAvg}</div>
                     <div className="rw">
-                      Min <span className="black">90.69RS</span>
+                      Min <span className="black">{wazirxMin}RS</span>
                     </div>
                     <div className="rw">
-                      Max <span className="black">90.76RS</span>
+                      Max <span className="black">{wazirxMax}RS</span>
                     </div>
                   </div>
                   <div className="bx">
@@ -398,15 +410,15 @@ export default function Exchange() {
                       </Link>
                     </div>
                     <div className="text">
-                      Avg <span className="b">94.34</span>{" "}
+                      Avg <span className="b">{binanceAvg}</span>{" "}
                       <span className="rs">RS</span>
                     </div>
-                    <div className="small">1USDT = ₹95.82</div>
+                    <div className="small">1USDT = ₹{binanceAvg}</div>
                     <div className="rw">
-                      Min <span className="black">94.99RS</span>
+                      Min <span className="black">{binanceMin}RS</span>
                     </div>
                     <div className="rw">
-                      Max <span className="black">96.2RS</span>
+                      Max <span className="black">{binanceMax}RS</span>
                     </div>
                   </div>
                 </div>

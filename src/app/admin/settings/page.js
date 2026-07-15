@@ -20,6 +20,14 @@ export default function AdminSettingsPage() {
   const [withdrawMin, setWithdrawMin] = useState(50);
   const [moderatorAmountLimit, setModeratorAmountLimit] = useState(500);
 
+  // Exchange rates (admin configurable)
+  const [wazirxAvg, setWazirxAvg] = useState(90.69);
+  const [wazirxMin, setWazirxMin] = useState(90.69);
+  const [wazirxMax, setWazirxMax] = useState(90.76);
+  const [binanceAvg, setBinanceAvg] = useState(94.34);
+  const [binanceMin, setBinanceMin] = useState(94.99);
+  const [binanceMax, setBinanceMax] = useState(96.2);
+
   const [trc20Address, setTrc20Address] = useState('');
   const [erc20Address, setErc20Address] = useState('');
   const [trc20QrUrl, setTrc20QrUrl] = useState('');
@@ -79,6 +87,12 @@ export default function AdminSettingsPage() {
         setRate(s.rate);
         setDepositMin(s.depositMin);
         setWithdrawMin(s.withdrawMin);
+      if (s.wazirxAvg !== undefined) setWazirxAvg(s.wazirxAvg);
+      if (s.wazirxMin !== undefined) setWazirxMin(s.wazirxMin);
+      if (s.wazirxMax !== undefined) setWazirxMax(s.wazirxMax);
+      if (s.binanceAvg !== undefined) setBinanceAvg(s.binanceAvg);
+      if (s.binanceMin !== undefined) setBinanceMin(s.binanceMin);
+      if (s.binanceMax !== undefined) setBinanceMax(s.binanceMax);
         setTrc20Address(s.trc20Address || '');
         setErc20Address(s.erc20Address || '');
         setTrc20QrUrl(s.trc20QrUrl || '');
@@ -142,6 +156,12 @@ export default function AdminSettingsPage() {
         rate: parseFloat(rate) || 0,
         depositMin: parseFloat(depositMin) || 0,
         withdrawMin: parseFloat(withdrawMin) || 0,
+        wazirxAvg: parseFloat(wazirxAvg) || 0,
+        wazirxMin: parseFloat(wazirxMin) || 0,
+        wazirxMax: parseFloat(wazirxMax) || 0,
+        binanceAvg: parseFloat(binanceAvg) || 0,
+        binanceMin: parseFloat(binanceMin) || 0,
+        binanceMax: parseFloat(binanceMax) || 0,
         trc20Address, erc20Address, trc20QrUrl, erc20QrUrl,
         referralLevel1: parseFloat(referralLevel1) || 0,
         referralLevel2: parseFloat(referralLevel2) || 0,
@@ -342,6 +362,45 @@ export default function AdminSettingsPage() {
                   placeholder="e.g. 50"
                 />
                 <p className={styles.formHint}>Minimum USDT amount users can withdraw</p>
+              </div>
+
+              <div style={{ height: '16px' }} />
+
+              <div className={styles.settingsSectionTitle}>
+                <i className="fas fa-exchange-alt" style={{ color: '#10a992' }} />
+                Exchanges (displayed to users)
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>WazirX — Avg</label>
+                <input type="number" value={wazirxAvg} onChange={(e) => setWazirxAvg(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                <p className={styles.formHint}>Average WazirX price (INR per USDT)</p>
+              </div>
+              <div className={styles.formGroup} style={{ display: 'flex', gap: '12px' }}>
+                <div style={{ flex: 1 }}>
+                  <label className={styles.formLabel}>WazirX — Min</label>
+                  <input type="number" value={wazirxMin} onChange={(e) => setWazirxMin(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                </div>
+                <div style={{ flex: 1 }}>
+                  <label className={styles.formLabel}>WazirX — Max</label>
+                  <input type="number" value={wazirxMax} onChange={(e) => setWazirxMax(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                </div>
+              </div>
+
+              <div className={styles.formGroup}>
+                <label className={styles.formLabel}>Binance — Avg</label>
+                <input type="number" value={binanceAvg} onChange={(e) => setBinanceAvg(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                <p className={styles.formHint}>Average Binance price (INR per USDT)</p>
+              </div>
+              <div className={styles.formGroup} style={{ display: 'flex', gap: '12px' }}>
+                <div style={{ flex: 1 }}>
+                  <label className={styles.formLabel}>Binance — Min</label>
+                  <input type="number" value={binanceMin} onChange={(e) => setBinanceMin(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                </div>
+                <div style={{ flex: 1 }}>
+                  <label className={styles.formLabel}>Binance — Max</label>
+                  <input type="number" value={binanceMax} onChange={(e) => setBinanceMax(parseFloat(e.target.value) || 0)} className={styles.input} step="0.01" />
+                </div>
               </div>
 
               <div style={{ height: '16px' }} />
