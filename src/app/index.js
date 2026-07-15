@@ -94,7 +94,7 @@ export default function Index() {
                   <img
                     src="/images/coinswitch_black.svg"
                     alt="logo"
-                    style={{ width: '90px', height: 'auto', marginBottom: '5px' }}
+                    style={{ width: '110px', height: 'auto', marginBottom: '5px' }}
                   />
                   <p style={{ color: '#000000' }}>India’s #1 Trusted USDT Exchange Platform.</p>
                 </div>
@@ -104,7 +104,7 @@ export default function Index() {
                 href="Coinswitch.apk"
                 className="downloadbutton"
                 download
-                style={{ color: '#000000', borderColor: '#000000' }}
+                style={{ color: '#ffffff', borderColor: '#01ba8e', backgroundColor: '#01ba8e'  , fontWeight:700 , }}
               >
                 Download
               </Link>
@@ -121,14 +121,14 @@ export default function Index() {
         )}
 
         <header className="header" style={{ position: 'relative', background: '#ffffff', borderBottom: '1px solid #eee' }}>
-          <div className="left">
+        
             <img
               src="/images/coinswitch_black.svg"
               alt="logo"
-              width="100"
+              width="120"
               height="40"
             />
-          </div>
+          
           <div className="right">
             {/* <Link href="#">
                 <Image                

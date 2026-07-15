@@ -183,7 +183,7 @@ export default function Exchange() {
                 <img
                   src="/images/coinswitch_black.svg"
                   alt="logo"
-                  width="100"
+                  width="110"
                   height="36"
                 />
               </div>
@@ -214,7 +214,7 @@ export default function Exchange() {
             <div className="mainHeadExchange">
               <p className="">Platform Rate</p>
               <h3>1 USDT = INR {rate}</h3>
-              <div className="logoImg"><img src="/image/coinswitch.svg" /></div>
+              <div className="logoImg"><img src="/image/coinswitch.svg" height="50" width="150" /></div>
             </div>
 
             <div style={{ padding: '10px 15px 14px 15px' }}>
