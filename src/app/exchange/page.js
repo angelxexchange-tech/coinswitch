@@ -225,8 +225,7 @@ export default function Exchange() {
           <div className="page-wrapper page-wrapper-ex" style={{ padding: 0 }}>
             <div className="mainHeadExchange">
               <p className="">Platform Rate</p>
-              <h3>1 USDT = INR {rate}</h3>
-              <div className="logoImg" style={{ width: 'auto' }}><img src="/image/coinswitch.svg" style={{ width: '252px', height: '51px' }} /></div>
+              <h1>1 USDT = INR {rate}</h1>
             </div>
 
             <div style={{ padding: '10px 15px 14px 15px' }}>

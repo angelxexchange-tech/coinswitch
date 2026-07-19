@@ -1811,7 +1811,7 @@ section.section-4 .dflex-out .rw span.black {
 }
 
 .mainHeadExchange {
-    margin-top: 12px;
+    margin-top: 9px;
     background-image: url(../image/exchange_top.png);
     height: 145px;
     background-size: cover;
@@ -1833,8 +1833,9 @@ section.section-4 .dflex-out .rw span.black {
 
 .mainHeadExchange p {
     font-family: "Mona Sans", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
+    margin-top: 17px;
 }
 
 .mainHeadExchange h3 {
