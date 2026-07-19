@@ -17,7 +17,7 @@ export const metadata = {
   description: "CoinSwitch is the most trustable exchange partner. Exchange more, earn more!",
   manifest: "/manifest.json",
   icons: {
-    icon: "/image/logo-icon.png",
+    icon: "/images/coinswitch_icon.svg",
   },
   verification: {
     google: "WJJgbZoAjQ2OYURThYg5MzQzF8ZIpJwIfitC2E_t6Fg",

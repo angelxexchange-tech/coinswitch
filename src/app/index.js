@@ -86,17 +86,16 @@ export default function Index() {
 
 
         {showAppLink && (
-          <div className="applinkMainDiv" style={{ backgroundColor: '#ffffff', border: '1px solid #ddd' }}>
-            <div className="applinkdownload" style={{ borderBottom: '1px solid #eee' }}>
+          <div className="applinkMainDiv" style={{ backgroundColor: '#ffffff' }}>
+            <div className="applinkdownload">
               <div className="appimgtext">
-
+                <img
+                  src="/images/coinswitch_icon.svg"
+                  alt="logo"
+                />
                 <div className="textlink">
-                  <img
-                    src="/images/coinswitch_black.svg"
-                    alt="logo"
-                    style={{ width: '100px', height: 'auto', marginBottom: '5px' }}
-                  />
-                  <p style={{ color: '#000000' }}>India’s #1 Trusted USDT Exchange Platform.</p>
+                  <h4>CoinSwitch</h4>
+                  <p>India’s #1 Trusted USDT Exchange Platform.</p>
                 </div>
               </div>
 
@@ -104,7 +103,7 @@ export default function Index() {
                 href="Coinswitch.apk"
                 className="downloadbutton"
                 download
-                style={{ color: '#ffffff', borderColor: '#01ba8e', backgroundColor: '#01ba8e' }}
+                style={{ color: '#ffffff', border: 'none', backgroundColor: '#01ba8e', padding: '4px 8px', fontSize: '10px'}}
               >
                 Download
               </Link>
@@ -113,7 +112,6 @@ export default function Index() {
             <button
               className="closeAppLink"
               onClick={() => setShowAppLink(false)}
-              style={{ color: '#000000' }}
             >
               X
             </button>
