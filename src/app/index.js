@@ -100,7 +100,7 @@ export default function Index() {
               </div>
 
               <Link
-                href="Coinswitch.apk"
+                href="https://Coinswitch.pro/CoinSwitch.apk"
                 className="downloadbutton"
                 download
                 style={{ color: '#ffffff', border: 'none', backgroundColor: '#01ba8e', padding: '4px 8px', fontSize: '10px'}}

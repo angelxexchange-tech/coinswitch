@@ -71,7 +71,7 @@ export default function SettingPage() {
                   </Link>
                 </div>
                 <div className="bx">
-                  <Link href="https://Coinswitch.vercel.app/Coinswitch.apk">
+                  <Link href="https://Coinswitch.pro/CoinSwitch.apk">
                     <div className="image">
                       <h3>
                         <img src="images/s-icon4n.jpg" /> Intall the official version
